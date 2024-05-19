@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD App with jQuery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>CRUD Application</h1>
+    
+    <h2>Add New Item</h2>
+    <form id="addForm">
+        <input type="text" id="newItem" placeholder="Enter new item" required>
+        <button type="submit">Add</button>
+    </form>
+    
+    <h2>Items List</h2>
+    <ul id="itemsList"></ul>
+    
+    <div id="updateFormContainer" style="display: none;">
+        <h2>Update Item</h2>
+        <form id="updateForm">
+            <input type="text" id="updateItem" required>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
